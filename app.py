@@ -72,7 +72,7 @@ source = st.sidebar.text_input("Enter Source Location", placeholder="E.g., New Y
 destination = st.sidebar.text_input("Enter Destination", placeholder="E.g., Paris, New York")
 start_date = st.sidebar.date_input("Start Date", datetime.date.today())
 end_date = st.sidebar.date_input("End Date", datetime.date.today() + datetime.timedelta(days=3))
-budget = st.sidebar.number_input("Enter Your Budget ($)", min_value=100, step=50)
+budget = st.sidebar.number_input("Enter Your Budget ($)", min_value=5000, step=10)
 
 # Calculate number of days
 num_days = (end_date - start_date).days
